@@ -1,54 +1,8 @@
 # vue-cli-plugin-vuetify-storybook
-> A Vuetify Storybook Plugin for [vue-cli@3.0](https://github.com/vuejs/vue-cli)
+> A Vuetify Storybook Plugin for [vue-cli](https://github.com/vuejs/vue-cli)
 
-### 💿 Install
-
-```bash
-vue add vuetify-storybook
-```
-
-Once installed, you can run:
-
-```bash
-yarn serve:storybook
-# OR
-npm run serve:storybook
-```
-
-### 🚀 Usage
-To add new stories, simply create a new file that contains `.stories.js`. An example exists in `.storybook/stories/example.stories.js` of your project.
-
-#### Creating stories
-If you are using [vue-cli-plugin-vuetify-cli](https://github.com/vuetifyjs/vue-cli-plugin-vuetify-cli), stories will be automatically generated when you create new components.
-
-```js
-// A helper function to faciliate the generation of stories
-import { storyFactory } from '../util/helpers'
-
-// Components
-import { AnotherComponent } from 'path/to/component'
-
-// Generate a factory function
-// Will automatically bootstrap the story components
-const story = storyFactory({
-  // Can pass in an import function
-  MyComponent: () => import('path/to/component'),
-  // Or explicitly import and use
-  AnotherComponent,
-})
-
-export const asDefault = () => story({
-  template: `<my-component></my-component>`,
-})
-
-export const withAnotherComponent = () => story({
-  template: `
-    <my-component>
-      <another-component></another-component>
-    </my-component>
-  `,
-})
-```
+### ⚠ Archived
+This package has been moved to the main [vue-cli-plugins](https://github.com/vuetifyjs/vue-cli-plugins/) repository.
 
 ### 💪 Supporting Vuetify
 <p>Vuetify is an open source MIT project that has been made possible due to the generous contributions by <a href="https://github.com/vuetifyjs/vuetify/blob/dev/BACKERS.md">community backers</a>. If you are interested in supporting this project, please consider:</p>
